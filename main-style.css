@@ -226,21 +226,20 @@ html, body {
     }
     
     .about h1 {
-    font-size: 50px;
-    text-align: center;
-    grid-row: 1/2;
-    box-shadow: 0 0 2px 1px black;
-    padding: 10px;
-}
+        font-size: 7rem;
+        text-align: center;
+        grid-row: 1/2;
+        padding: 0px;
+    }
 
-.about p {
-    display: flex;
-    align-self: flex-start;
-    justify-self: center;
-    width: 50vw;
-    margin: 20px;
-    font-size: 20px;
-    font-style: italic;
-    grid-row: span 2;
-}
+    .about p {
+        display: flex;
+        align-self: flex-start;
+        justify-self: center;
+        width: 100%;
+        margin: 5px;
+        font-size: 4rem;
+        font-style: italic;
+        grid-row: span 2;
+    }
 }
