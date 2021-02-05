@@ -26,7 +26,7 @@ html, body {
     display: flex;
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     min-width: 20rem;
     list-style: none;
     font-size: 0.9em;
@@ -75,18 +75,33 @@ html, body {
 }
 
 /* COVER */
+/* header {
+    /* background-image: url(./img/starwheel.svg);
+     */
+    /* background-color: lightskyblue;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+} */
+
 .header-cover {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 40vh;
+    height: 30vh;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 
+header > h1, h2 {
+    text-align: center;
+    color: black;
+}
+
 .header-cover img {
     width: auto;
-    height: 18vh;
+    height: 25vh;
     margin: auto 0;
     padding: 0px;
     border-radius: 200px;
@@ -108,17 +123,18 @@ html, body {
         width: auto;
         height: 5rem;
     }
-  }
+}
 
 #hr-style {
     width: 20vw;
+    margin-bottom: 25px;
     border: 0;
     height: 0; /* Firefox... */
     box-shadow: 0 0 10px 1px black;
 }
 
 .buffer {
-    height: 100px;
+    height: 35px;
 }
 
 /* SIDE NAV */
@@ -155,9 +171,11 @@ html, body {
 }
 
 .side-nav > a, i {
+    padding: 10px;
     color: whitesmoke;
+    border-style: solid;
     border-radius: 200px;
-    border-width: 100px;
+    border-width: 2px;
     border-color: goldenrod;
 }
 
@@ -184,7 +202,7 @@ html, body {
     /* align-content: center; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr;
     gap: 10px;
     margin-top: 20px;
 }
@@ -192,24 +210,24 @@ html, body {
 .about h1 {
     font-size: 50px;
     text-align: center;
-    grid-row: 1/2;
+    grid-row: 1fr;
     padding: 10px;
 }
 
 .about p {
     text-align: start;
     line-height: 30px;
-    margin-top: 50px;
     padding: 5px;
     font-size: 20px;
     font-style: italic;
-    grid-row: span 2;
+    grid-row: span 1;
 }
 
 .block-text {
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 20em;
+    width: 22em;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -217,7 +235,7 @@ html, body {
         width: auto;
         padding: 10px;
         display: grid;
-        grid-template-rows: 1fr 3fr;
+        grid-template-rows: 1fr;
         gap: 10px;
         margin-top: 20px;
     }
