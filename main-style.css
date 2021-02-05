@@ -91,14 +91,14 @@ html, body {
     border-style: solid;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
     .header-cover {
        height: 20vh; 
     }
     
     .header-cover img {
         width: auto;
-        height: 12vh;
+        height: 5rem;
     }
   }
 
