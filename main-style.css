@@ -37,6 +37,14 @@ html, body {
     }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .main-nav {
+        height: 100%;
+        font-size: 0.9em;
+        padding: 0;
+    }
+}
+
 .main-nav li {
     padding: 20px;
 }
@@ -74,6 +82,13 @@ html, body {
     border-width: 5px;
     border-style: solid;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .header-cover img {
+        width: auto;
+        height: 12vh;
+    }
+  }
 
 #hr-style {
     width: 20vw;
