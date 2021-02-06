@@ -75,15 +75,13 @@ html, body {
 }
 
 /* COVER */
-/* header {
-    /* background-image: url(./img/starwheel.svg);
-     */
-    /* background-color: lightskyblue;
-    background-size: 50%;
+header {
+    background-color: whitesmoke; 
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-clip: padding-box;
-} */
+}
 
 .header-cover {
     display: flex;
@@ -179,7 +177,7 @@ header > h1, h2 {
     border-color: goldenrod;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
     .side-nav {
         width: auto;
         min-width: fit-content;
@@ -243,6 +241,19 @@ header > h1, h2 {
     .block-text {
         margin-left: auto;
         margin-right: auto;
-        width: 12em;
+        width: 15em;
     }
+}
+
+footer {
+    height: 20px;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    padding: 40px
+}
+
+footer > p {
+    text-align: center;
 }
