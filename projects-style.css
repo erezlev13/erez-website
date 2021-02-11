@@ -6,8 +6,7 @@
 
 .box {
     padding: 5px;
-    margin: auto 10px;
-    margin-right: 0px;
+    margin: 20px 10px;
     background-color: #0a66c2;
     background-image: -o-linear-gradient(#0a66c2, rgb(163, 180, 235));
     background-image: -moz-linear-gradient(#0a66c2, rgb(163, 180, 235));
@@ -36,7 +35,8 @@
 } */
 
 .block-text {
-    width: 20rem;
+    min-width: 20rem;
+    max-width:  25rem;
     height: fit-content;
     line-height: 20px;
 }
@@ -48,7 +48,7 @@
 
     .block-text {
         font-size: 0.9em;
-        width: 12rem;
+        width: 15rem;
     }
 }
 
