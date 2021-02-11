@@ -31,7 +31,7 @@ function SVS_B(eAmt, where) {
 
 about.addEventListener("click", () => {
     about.setAttribute("href", aboutPath);
-    SmoothVerticalScrolling(document.getElementById("about-content"), 275, "center");
+    SmoothVerticalScrolling(document.getElementById("about-content"), 400, "top");
 });
 
 projects.addEventListener("click", () => {
