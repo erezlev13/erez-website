@@ -42,4 +42,4 @@ function SVS_B(eAmt, where) {
         window.scrollBy(0, eAmt);
 }
 
-SmoothVerticalScrolling(window, 275, "center");
+SmoothVerticalScrolling(document.getElementById("about-content"), 275, "center");
