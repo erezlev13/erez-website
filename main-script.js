@@ -12,19 +12,6 @@ index.addEventListener("click", () => {
     index.setAttribute("href", indexPath);
 });
 
-about.addEventListener("click", () => {
-    about.setAttribute("href", aboutPath);
-});
-
-projects.addEventListener("click", () => {
-    projects.setAttribute("href", projectsPath);
-});
-
-resume.addEventListener("click", () => {
-    window.open(resumePath, '_blank');
-    return false;
-});
-
 function SmoothVerticalScrolling(e, time, where) {
     var eTop = e.getBoundingClientRect().top;
     var eAmt = eTop / 100;
@@ -42,4 +29,16 @@ function SVS_B(eAmt, where) {
         window.scrollBy(0, eAmt);
 }
 
-SmoothVerticalScrolling(document.getElementById("about-content"), 275, "center");
+about.addEventListener("click", () => {
+    about.setAttribute("href", aboutPath);
+    SmoothVerticalScrolling(document.getElementById("about-content"), 275, "center");
+});
+
+projects.addEventListener("click", () => {
+    projects.setAttribute("href", projectsPath);
+});
+
+resume.addEventListener("click", () => {
+    window.open(resumePath, '_blank');
+    return false;
+});
