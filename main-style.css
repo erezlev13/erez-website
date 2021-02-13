@@ -6,13 +6,17 @@ html, body {
     background-position: center;
     background-clip: padding-box;
     font-family: 'Cuprum', sans-serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     margin: 0;
 }
 
 
 /* HEADER */
 header {
+    /* background-image: url(./img/background-canada.jpg);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover; */
     top: 0;
 }
 
@@ -57,11 +61,14 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    user-select: text;
 }
 
-.main-nav .active {
+.active a {
     color: #a44a3f;
+}
+
+.active {
+    border-bottom: 3px solid #a44a3f;
 }
 
 .main-nav a:hover {

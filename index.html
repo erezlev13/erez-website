@@ -10,17 +10,19 @@
 
         <link rel="stylesheet" type="text/css" href="main-style.css">
         <link rel="stylesheet" type="text/css" href="projects-style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
-        <header>
+        <header id="home">
             <nav class="header-nav sticky">
                 <!-- NAV -->
-                <ul class="main-nav">
-                   <li><a class="active" href="#" id="index">Home</a></li>
-                   <li><a href="#" id="about">About</a></li>
-                   <li><a href="#" id="projects">Projects</a></li>
-                   <li><a href="#" id="resume">Resume</a></li> 
+                <ul id="mainNav" class="main-nav">
+                   <li class="active" id="index"><a href="#home" >Home</a></li>
+                   <li id="about"><a href="#about-content">About</a></li>
+                   <li id="projects"><a href="#projects-content">Projects</a></li>
+                   <li id="resume"><a href="#null">Resume</a></li> 
                 </ul>
             </nav>
             <div class="buffer"></div>
@@ -33,7 +35,6 @@
                 <img src="./img/profile_picture_color(croppted).jpg" alt="profile-picture">
             </div>
         </header>
-        <div class="buffer"></div>
         <section>
         <!-- ABOUT -->
         <div id="about-content" class="about">
