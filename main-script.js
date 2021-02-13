@@ -6,8 +6,8 @@ const resume =  document.getElementById("resume");
 let currentPage = index;
 
 const indexPath = "./index.html";
-const aboutPath = "./index.html#about-content";
-const projectsPath = "./projects.html";
+const aboutPath = "#about-content";
+const projectsPath = "#projects-content";
 const resumePath = "./docs/Erez\ Lev's\ CV.pdf";
 
 
@@ -28,20 +28,23 @@ function SVS_B(eAmt, where) {
         window.scrollBy(0, eAmt);
 }
 
-function setLink(aElement, path) {
+function setLinkAndHighlight(aElement, path) {
+    currentPage.removeAttribute("class");
     aElement.setAttribute("href", path);
+    aElement.setAttribute("class", "active");
+    currentPage = aElement;
 }
 
 index.addEventListener("click", () => {
-    setLink(index, indexPath);
+    setLinkAndHighlight(index, indexPath);
 });
 
 about.addEventListener("click", () => {
-    setLink(about, aboutPath);
+    setLinkAndHighlight(about, aboutPath);
 });
 
 projects.addEventListener("click", () => {
-    setLink(projects, projectsPath);
+    setLinkAndHighlight(projects, projectsPath);
 });
 
 resume.addEventListener("click", () => {
@@ -57,3 +60,4 @@ resume.addEventListener("click", () => {
 // }
 
 // aboutContent.innerHTML = includeAbout();
+

@@ -1,13 +1,20 @@
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
     justify-content: center;
 }
 
+.projects h1 {
+    font-size: 50px;
+    text-align: center;
+    grid-row: 1fr;
+    padding: 10px;
+}
+
 .box {
-    padding: 5px;
-    margin: 20px auto;
+    padding: 10px;
+    margin: 5px auto;
     background-color: #0b2027;
     color: #cfd7c7;
     display: flex;
@@ -69,11 +76,6 @@
         font-size: 0.7em;
         min-width: 13rem;
     }
-}
-
-
-.buffer {
-    height: 15px;
 }
 
 .center-horizontal {
