@@ -1,16 +1,15 @@
 const index =  document.getElementById("index");
 const about =  document.getElementById("about");
+const aboutContent = document.getElementById("about-content");
 const projects =  document.getElementById("projects");
 const resume =  document.getElementById("resume");
+let currentPage = index;
 
 const indexPath = "./index.html";
 const aboutPath = "./index.html#about-content";
 const projectsPath = "./projects.html";
 const resumePath = "./docs/Erez\ Lev's\ CV.pdf";
 
-index.addEventListener("click", () => {
-    index.setAttribute("href", indexPath);
-});
 
 function SmoothVerticalScrolling(e, time, where) {
     var eTop = e.getBoundingClientRect().top;
@@ -29,16 +28,32 @@ function SVS_B(eAmt, where) {
         window.scrollBy(0, eAmt);
 }
 
+function setLink(aElement, path) {
+    aElement.setAttribute("href", path);
+}
+
+index.addEventListener("click", () => {
+    setLink(index, indexPath);
+});
+
 about.addEventListener("click", () => {
-    about.setAttribute("href", aboutPath);
-//     SmoothVerticalScrolling(document.getElementById("about-content"), 275, "center");
+    setLink(about, aboutPath);
 });
 
 projects.addEventListener("click", () => {
-    projects.setAttribute("href", projectsPath);
+    setLink(projects, projectsPath);
 });
 
 resume.addEventListener("click", () => {
     window.open(resumePath, '_blank');
     return false;
 });
+
+// function includeAbout() {
+//     var xmlhttp = new XMLHttpRequest();
+//     xmlhttp.open("GET", 'about.html', false);
+//     xmlhttp.send();
+//     return xmlhttp.responseText;
+// }
+
+// aboutContent.innerHTML = includeAbout();
