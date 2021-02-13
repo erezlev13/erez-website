@@ -10,38 +10,35 @@ html, body {
     margin: 0;
 }
 
+
+/* HEADER */
 header {
     top: 0;
 }
 
-/* HEADER */
 .header-nav {
-    /* background-color: #0a66c2d0;
-    background-image: -o-linear-gradient(#0a66c2d0, rgb(163, 180, 235));
-    background-image: -moz-linear-gradient(#0a66c2d0, rgb(163, 180, 235));
-    background-image: -webkit-linear-gradient(#0a66c2d0, rgb(163, 180, 235)); */
     background-color: #0b2027;
 }
 
 /* MAIN NAV */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .main-nav {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 0;
-    left: 0;
-    width: auto;
+    margin: 0;
     list-style: none;
     font-size: 1em;
     padding: 5px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-width: 600px) {
-    .header-nav {
-        width: auto;
-    }
-
     .main-nav {
-        width: auto;
         font-size: 0.7em;
         padding: 1px;
     }
